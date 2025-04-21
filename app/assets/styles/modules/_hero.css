@@ -1,0 +1,14 @@
+$main-color: #3498db;
+$text-color: #fff;
+
+.hero {
+  background-color: $main-color;
+
+  &__title {
+    color: $text-color;
+  }
+
+  &__description {
+    color: $text-color;
+  }
+}
