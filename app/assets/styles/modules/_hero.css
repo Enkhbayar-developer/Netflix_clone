@@ -1,14 +1,34 @@
-$main-color: #3498db;
-$text-color: #fff;
-
 .hero {
-  background-color: $main-color;
+  background-color: $primary-red;
 
   &__title {
-    color: $text-color;
+    color: $text-gray;
+
+    @mixin atSmall {
+      color: $text-white;
+    }
+
+    @mixin atMedium {
+      color: $text-white;
+    }
+
+    @mixin atLarge {
+      color: $text-white;
+    }
   }
 
   &__description {
-    color: $text-color;
+    color: $text-gray;
+    @mixin atSmall {
+      color: $text-white;
+    }
+
+    @mixin atMedium {
+      color: $text-white;
+    }
+
+    @mixin atLarge {
+      color: $text-white;
+    }
   }
 }

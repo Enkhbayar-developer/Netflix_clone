@@ -1,0 +1,19 @@
+$primary-red: #e50914;
+$dark-background: #141414;
+$light-background: #f5f5f1;
+$text-white: #ffffff;
+$text-gray: #b3b3b3;
+$hover-gray: #303030;
+
+$font-family-primary: "Helvetica Neue", Arial, sans-serif;
+$font-size-base: 16px;
+$font-size-large: 24px;
+$font-size-small: 12px;
+
+$spacing-small: 8px;
+$spacing-medium: 16px;
+$spacing-large: 32px;
+
+$border-radius: 4px;
+
+$box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
