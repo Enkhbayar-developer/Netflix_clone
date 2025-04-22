@@ -8,6 +8,11 @@
       name="description"
       content="Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices."
     />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="author" content="Netflix Inc." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,20 +20,185 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Netflix</title>
   </head>
   <body>
+    <header class="navbar">
+      <div class="navbar__logo">
+        <img
+          class="navbar__logo__img"
+          src="./assets/images/netflix_symbol.png"
+          alt="netflix logo"
+        />
+      </div>
+      <div class="navbar__signin">
+        <div class="navbar__signin__wrapper"></div>
+        <div class="navbar__signin__btn">
+          <a href="#">Sign In</a>
+        </div>
+      </div>
+    </header>
+
     <div class="hero">
-      <h1 class="hero__title">Welcome to Netflix</h1>
-      <p class="hero__description">
-        Your favorite movies and TV shows are just a click away.
-      </p>
+      <div class="hero__background">
+        <img src="./assets/images/netflix_background.jpg" alt="" />
+      </div>
+      <div class="hero__content">
+        <div class="hero__content__title">
+          <h1>Unlimited movies, TV shows, and more</h1>
+        </div>
+        <div class="hero__content__subtitle">
+          <h3>Starts at USD 2.99 Cancel anytime.</h3>
+        </div>
+        <div class="hero__content__getstarted">
+          <div class="hero__content__paragraph">
+            <p>
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </p>
+          </div>
+          <div class="hero__content__input">
+            <input type="text" placeholder="Email address" />
+            <button class="hero__content__input__btn">
+              Get Started<i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="trending">
+      <div class="trending__content">
+        <div class="trending__content__title">
+          <h1>Trending Now</h1>
+        </div>
+        <div class="trending__content__list"></div>
+      </div>
+    </div>
+
+    <div class="join">
+      <div class="join__enjoy">
+        <div class="join__download__title">
+          <h1>Download your shows to watch offline.</h1>
+        </div>
+        <div class="join__download__subtitle">
+          <h3>
+            Save your favorites easily and always have something to watch.
+          </h3>
+        </div>
+        <div class="join__download__image">
+          <img src="./assets/images/download.png" alt="" />
+        </div>
+      </div>
+      <div class="join__download">
+        <div class="join__download__title">
+          <h1>Download your shows to watch offline.</h1>
+        </div>
+        <div class="join__download__subtitle">
+          <h3>
+            Save your favorites easily and always have something to watch.
+          </h3>
+        </div>
+        <div class="join__download__image">
+          <img src="./assets/images/download.png" alt="" />
+        </div>
+      </div>
+      <div class="join__everywhere">
+        <div class="join__download__title">
+          <h1>Download your shows to watch offline.</h1>
+        </div>
+        <div class="join__download__subtitle">
+          <h3>
+            Save your favorites easily and always have something to watch.
+          </h3>
+        </div>
+        <div class="join__download__image">
+          <img src="./assets/images/download.png" alt="" />
+        </div>
+      </div>
+      <div class="join__kids">
+        <div class="join__download__title">
+          <h1>Download your shows to watch offline.</h1>
+        </div>
+        <div class="join__download__subtitle">
+          <h3>
+            Save your favorites easily and always have something to watch.
+          </h3>
+        </div>
+        <div class="join__download__image">
+          <img src="./assets/images/download.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="question__content">
+        <div class="question__content__title">
+          <h1>Frequently Asked Questions</h1>
+        </div>
+        <div class="question__content__list">
+          <ul>
+            <li>What is Netflix?</li>
+            <li>How much does Netflix cost?</li>
+            <li>Where can I watch?</li>
+            <li>How do I cancel?</li>
+            <li>What can I watch on Netflix?</li>
+            <li>Is Netflix good for kids?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="hero__content__getstarted">
+        <div class="hero__content__paragraph">
+          <p>
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </p>
+        </div>
+        <div class="hero__content__input">
+          <input type="text" placeholder="Email address" />
+          <button class="hero__content__input__btn">
+            Get Started<i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__content__title">
+          <h1>Questions? Call 1-866-579-7172</h1>
+        </div>
+        <div class="footer__content__links">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Media Center</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+            <li><a href="#">Corporate Information</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__content__copyright">
+          <p>Netflix Clone by Your Name © 2023</p>
+        </div>
+      </div>
+    </footer>
+
     <script src="bundle.js"></script>
   </body>
 </html>
