@@ -1,13 +1,24 @@
 .navbar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
   &__logo {
-    flex: 1;
     &__img {
       width: 2rem;
       height: 2rem;
     }
   }
   &__signin {
-    flex: 2;
+    &__btn {
+      &__link {
+        text-decoration: none;
+        background-color: $light-background;
+        color: $text-dark;
+        padding: $spacing-small $spacing-medium;
+        border-radius: $border-radius;
+        font-weight: bold;
+      }
+    }
   }
 }

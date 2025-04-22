@@ -1,8 +1,12 @@
 .hero {
   background-color: $primary-red;
 
-  &__title {
-    color: $text-gray;
+  &__background {
+    width: 100%;
+
+    @mixin atXSmall {
+      color: $text-white;
+    }
 
     @mixin atSmall {
       color: $text-white;
@@ -15,10 +19,44 @@
     @mixin atLarge {
       color: $text-white;
     }
+
+    &__img {
+      @mixin atXSmall {
+        width: 100%;
+        height: auto;
+        border-radius: $border-radius;
+        padding: 0 $spacing-small;
+      }
+
+      @mixin atSmall {
+        width: 100%;
+        height: auto;
+        border-radius: $border-radius;
+        padding: 0 $spacing-small;
+      }
+
+      @mixin atMedium {
+        width: 100%;
+        height: auto;
+        border-radius: $border-radius;
+        padding: 0 $spacing-small;
+      }
+
+      @mixin atLarge {
+        width: 100%;
+        height: auto;
+        border-radius: $border-radius;
+        padding: 0 $spacing-small;
+      }
+    }
   }
 
-  &__description {
+  &__content {
     color: $text-gray;
+    @mixin atXSmall {
+      color: $text-white;
+    }
+
     @mixin atSmall {
       color: $text-white;
     }
