@@ -29,44 +29,42 @@
     />
     <title>Netflix</title>
   </head>
-  <body style="background-color: black; color: white">
-    <header class="navbar">
-      <div class="navbar__logo">
+  <body>
+    <header class="header">
+      <div class="header__logo">
         <img
-          class="navbar__logo__img"
+          class="header__logo__img"
           src="./assets/images/netflix_symbol.png"
           alt="netflix logo"
         />
       </div>
-      <div class="navbar__signin">
-        <div class="navbar__signin__wrapper"></div>
-        <div class="navbar__signin__btn">
-          <a class="navbar__signin__btn__link" href="#">Sign In</a>
+      <div class="header__signin">
+        <div class="header__signin__wrapper"></div>
+        <div class="header__signin__btn">
+          <a class="header__signin__btn__link" href="#">Sign In</a>
         </div>
       </div>
     </header>
 
     <div class="hero">
-      <div class="hero__background">
-        <picture>
-          <source
-            media="(min-width: 769px)"
-            srcset="./assets/images/netflix_background-medium.jpg"
-          />
-          <source
-            media="(min-width: 481px)"
-            srcset="./assets/images/netflix_background-small.jpg"
-          />
-          <img
-            class="hero__background__img"
-            src="./assets/images/netflix_background-xsmall.jpg"
-            alt=""
-          />
-        </picture>
-      </div>
+      <picture>
+        <source
+          media="(min-width: 769px)"
+          srcset="./assets/images/netflix_background-medium.jpg"
+        />
+        <source
+          media="(min-width: 481px)"
+          srcset="./assets/images/netflix_background-small.jpg"
+        />
+        <img
+          class="hero__img"
+          src="./assets/images/netflix_background-xsmall.jpg"
+          alt=""
+        />
+      </picture>
       <div class="hero__content">
         <div class="hero__content__title">
-          <h1>Unlimited movies, TV shows, and more</h1>
+          <h2>Unlimited movies, TV shows, and more</h2>
         </div>
         <div class="hero__content__subtitle">
           <h3>Starts at USD 2.99 Cancel anytime.</h3>
@@ -78,9 +76,13 @@
               membership.
             </p>
           </div>
-          <div class="hero__content__input">
-            <input type="text" placeholder="Email address" />
-            <button class="hero__content__input__btn">
+          <div class="hero__content__form">
+            <input
+              class="hero__content__form__input"
+              type="text"
+              placeholder="Email address"
+            />
+            <button class="hero__content__form__btn">
               Get Started<i class="fa-solid fa-angle-right"></i>
             </button>
           </div>
