@@ -1,0 +1,7 @@
+.wrapper {
+  margin-right: auto; /* Centers the content */
+  margin-left: auto; /* Centers the content */
+  max-width: 960px; /* Sets a maximum width */
+  padding-right: 10px; /* Adds padding */
+  padding-left: 10px; /* Adds padding */
+}
